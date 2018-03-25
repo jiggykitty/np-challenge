@@ -14,6 +14,7 @@ class WelcomeScreen: UIView {
     @IBOutlet weak var nameField: UnderlinedTextField!
     
     @IBAction func submitButtonPressed(_ sender: Any) {
-        delegate!.passName(name: nameField.text ?? "")
+        self.delegate?.passName(name: nameField.text ?? "")
     }
+    
 }

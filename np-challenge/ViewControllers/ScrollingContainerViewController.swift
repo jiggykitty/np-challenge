@@ -38,6 +38,6 @@ class ScrollingContainerViewController: UIViewController {
 
     extension ScrollingContainerViewController: ScrollableForm {
         func passName(name: String) {
-            self.patient = Patient(name)
+            patient = Patient(name)
         }
 }
