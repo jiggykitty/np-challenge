@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash-->
+        <scene sceneID="OB8-Q5-gb8">
+            <objects>
+                <viewController storyboardIdentifier="SplashScreenVC" title="Splash" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3nr-xN-Gx9" customClass="SplashScreenViewController" customModule="np_challenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RoQ-Ay-pZP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pexels-photo-796545" translatesAutoresizingMaskIntoConstraints="NO" id="FLB-YG-mau">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="iVP-tW-Xd5" appends="YES" id="SRv-6F-2Nf"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tap to get started" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXz-t1-rGz">
+                                <rect key="frame" x="16" y="625.5" width="144.5" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nexpil" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dyF-ig-kzx">
+                                <rect key="frame" x="16" y="565.5" width="141" height="60"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="50"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="FLB-YG-mau" secondAttribute="trailing" id="7Hy-9m-fhc"/>
+                            <constraint firstItem="FLB-YG-mau" firstAttribute="leading" secondItem="RoQ-Ay-pZP" secondAttribute="leading" id="BZo-f5-B1w"/>
+                            <constraint firstItem="HXz-t1-rGz" firstAttribute="top" secondItem="dyF-ig-kzx" secondAttribute="bottom" id="QTY-4P-uTZ"/>
+                            <constraint firstItem="HXz-t1-rGz" firstAttribute="leading" secondItem="QVa-hU-spF" secondAttribute="leading" constant="16" id="VIG-Ny-He6"/>
+                            <constraint firstItem="dyF-ig-kzx" firstAttribute="leading" secondItem="QVa-hU-spF" secondAttribute="leading" constant="16" id="aB9-sh-y5a"/>
+                            <constraint firstItem="FLB-YG-mau" firstAttribute="top" secondItem="RoQ-Ay-pZP" secondAttribute="top" id="f91-NA-3eT"/>
+                            <constraint firstItem="QVa-hU-spF" firstAttribute="bottom" secondItem="HXz-t1-rGz" secondAttribute="bottom" constant="20" id="hVb-tZ-dtb"/>
+                            <constraint firstAttribute="bottom" secondItem="FLB-YG-mau" secondAttribute="bottom" id="ypU-ri-s5Y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QVa-hU-spF"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t7z-RR-Ltc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="iVP-tW-Xd5">
+                    <connections>
+                        <action selector="splashScreenTapped:" destination="3nr-xN-Gx9" id="wKP-tv-Pmt"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-284" y="-214.54272863568218"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pexels-photo-796545" width="2801" height="1867"/>
+    </resources>
+</document>

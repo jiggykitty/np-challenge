@@ -8,20 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		D934AD932067F85B003673C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D934AD922067F85B003673C3 /* AppDelegate.swift */; };
-		D934AD952067F85B003673C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D934AD942067F85B003673C3 /* ViewController.swift */; };
 		D934AD982067F85B003673C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D934AD962067F85B003673C3 /* Main.storyboard */; };
 		D934AD9A2067F85B003673C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D934AD992067F85B003673C3 /* Assets.xcassets */; };
 		D934AD9D2067F85B003673C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D934AD9B2067F85B003673C3 /* LaunchScreen.storyboard */; };
+		D934ADA52067FA19003673C3 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D934ADA42067FA19003673C3 /* Splash.storyboard */; };
+		D934ADA72067FD92003673C3 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D934ADA62067FD92003673C3 /* SplashScreenViewController.swift */; };
+		D934ADA920680F57003673C3 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D934ADA820680F57003673C3 /* RoundButton.swift */; };
+		D934ADAB206813D9003673C3 /* ScrollingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D934ADAA206813D9003673C3 /* ScrollingContainerViewController.swift */; };
+		D934ADAD206820A5003673C3 /* WelcomeScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D934ADAC206820A5003673C3 /* WelcomeScreen.xib */; };
+		D934ADAF20682330003673C3 /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D934ADAE20682330003673C3 /* WelcomeScreen.swift */; };
+		D934ADB1206824E4003673C3 /* UnderlinedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D934ADB0206824E4003673C3 /* UnderlinedTextField.swift */; };
+		D934ADB620682AC6003673C3 /* ScrollableForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = D934ADB520682AC6003673C3 /* ScrollableForm.swift */; };
+		D934ADB920682D0D003673C3 /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D934ADB820682D0D003673C3 /* Patient.swift */; };
+		D934ADBB20682DA8003673C3 /* Medication.swift in Sources */ = {isa = PBXBuildFile; fileRef = D934ADBA20682DA8003673C3 /* Medication.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D934AD8F2067F85B003673C3 /* np-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "np-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D934AD922067F85B003673C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D934AD942067F85B003673C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D934AD972067F85B003673C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D934AD992067F85B003673C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D934AD9C2067F85B003673C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D934AD9E2067F85B003673C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D934ADA42067FA19003673C3 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
+		D934ADA62067FD92003673C3 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		D934ADA820680F57003673C3 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		D934ADAA206813D9003673C3 /* ScrollingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingContainerViewController.swift; sourceTree = "<group>"; };
+		D934ADAC206820A5003673C3 /* WelcomeScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeScreen.xib; sourceTree = "<group>"; };
+		D934ADAE20682330003673C3 /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
+		D934ADB0206824E4003673C3 /* UnderlinedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlinedTextField.swift; sourceTree = "<group>"; };
+		D934ADB520682AC6003673C3 /* ScrollableForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ScrollableForm.swift; path = "np-challenge/Resources/ScrollableForm.swift"; sourceTree = SOURCE_ROOT; };
+		D934ADB820682D0D003673C3 /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Patient.swift; path = "np-challenge/Resources/Patient.swift"; sourceTree = SOURCE_ROOT; };
+		D934ADBA20682DA8003673C3 /* Medication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medication.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +72,55 @@
 		D934AD912067F85B003673C3 /* np-challenge */ = {
 			isa = PBXGroup;
 			children = (
+				D934ADB720682AED003673C3 /* Resources */,
+				D934ADB420682621003673C3 /* ViewControllers */,
+				D934ADB3206825F5003673C3 /* Storyboards */,
+				D934ADB2206825DE003673C3 /* Views */,
 				D934AD922067F85B003673C3 /* AppDelegate.swift */,
-				D934AD942067F85B003673C3 /* ViewController.swift */,
-				D934AD962067F85B003673C3 /* Main.storyboard */,
 				D934AD992067F85B003673C3 /* Assets.xcassets */,
 				D934AD9B2067F85B003673C3 /* LaunchScreen.storyboard */,
 				D934AD9E2067F85B003673C3 /* Info.plist */,
 			);
 			path = "np-challenge";
+			sourceTree = "<group>";
+		};
+		D934ADB2206825DE003673C3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D934ADA820680F57003673C3 /* RoundButton.swift */,
+				D934ADB0206824E4003673C3 /* UnderlinedTextField.swift */,
+				D934ADAE20682330003673C3 /* WelcomeScreen.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D934ADB3206825F5003673C3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D934AD962067F85B003673C3 /* Main.storyboard */,
+				D934ADA42067FA19003673C3 /* Splash.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		D934ADB420682621003673C3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D934ADA62067FD92003673C3 /* SplashScreenViewController.swift */,
+				D934ADAA206813D9003673C3 /* ScrollingContainerViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D934ADB720682AED003673C3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D934ADAC206820A5003673C3 /* WelcomeScreen.xib */,
+				D934ADB520682AC6003673C3 /* ScrollableForm.swift */,
+				D934ADB820682D0D003673C3 /* Patient.swift */,
+				D934ADBA20682DA8003673C3 /* Medication.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,9 +182,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D934ADAD206820A5003673C3 /* WelcomeScreen.xib in Resources */,
 				D934AD9D2067F85B003673C3 /* LaunchScreen.storyboard in Resources */,
 				D934AD9A2067F85B003673C3 /* Assets.xcassets in Resources */,
 				D934AD982067F85B003673C3 /* Main.storyboard in Resources */,
+				D934ADA52067FA19003673C3 /* Splash.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,8 +197,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D934AD952067F85B003673C3 /* ViewController.swift in Sources */,
+				D934ADAF20682330003673C3 /* WelcomeScreen.swift in Sources */,
+				D934ADA920680F57003673C3 /* RoundButton.swift in Sources */,
+				D934ADAB206813D9003673C3 /* ScrollingContainerViewController.swift in Sources */,
+				D934ADB1206824E4003673C3 /* UnderlinedTextField.swift in Sources */,
+				D934ADB620682AC6003673C3 /* ScrollableForm.swift in Sources */,
+				D934ADB920682D0D003673C3 /* Patient.swift in Sources */,
 				D934AD932067F85B003673C3 /* AppDelegate.swift in Sources */,
+				D934ADBB20682DA8003673C3 /* Medication.swift in Sources */,
+				D934ADA72067FD92003673C3 /* SplashScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
