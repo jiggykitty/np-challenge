@@ -16,6 +16,7 @@ class ScrollingContainerViewController: UIViewController {
     
     // MARK: Variables
     var patient: Patient?
+    var currentView: UIView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,13 +41,27 @@ class ScrollingContainerViewController: UIViewController {
         welcomeScreen.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor).isActive = true
         welcomeScreen.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor).isActive = true
         welcomeScreen.bottomAnchor.constraint(lessThanOrEqualTo: scrollView.bottomAnchor).isActive = true
+        
+        currentView = welcomeScreen
     }
 
-    func add
+    func addNextView(_ nextView: UIView) {
+        nextView.translatesAutoresizingMaskIntoConstraints = false
+        
+        scrollView.addSubview(nextView)
+        
+        nextView.topAnchor.constraint(equalTo: currentView!.bottomAnchor, constant: 100).isActive = true
+        nextView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor).isActive = true
+        nextView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor).isActive = true
+        nextView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor).isActive = true
+
+    }
 }
 
     extension ScrollingContainerViewController: ScrollableForm {
         func passName(name: String) {
             patient = Patient(name)
+            let nextView = Bundle.main.loadNibNamed("AddMedicationView", owner: self, options: nil)?.first as! UIView
+            addNextView(nextView)
         }
 }
