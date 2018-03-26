@@ -21,6 +21,7 @@
 		D934ADB620682AC6003673C3 /* ScrollableForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = D934ADB520682AC6003673C3 /* ScrollableForm.swift */; };
 		D934ADB920682D0D003673C3 /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D934ADB820682D0D003673C3 /* Patient.swift */; };
 		D934ADBB20682DA8003673C3 /* Medication.swift in Sources */ = {isa = PBXBuildFile; fileRef = D934ADBA20682DA8003673C3 /* Medication.swift */; };
+		D98911282068A077008EA4C6 /* AddMedicationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D98911272068A077008EA4C6 /* AddMedicationView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		D934ADB520682AC6003673C3 /* ScrollableForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ScrollableForm.swift; path = "np-challenge/Resources/ScrollableForm.swift"; sourceTree = SOURCE_ROOT; };
 		D934ADB820682D0D003673C3 /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Patient.swift; path = "np-challenge/Resources/Patient.swift"; sourceTree = SOURCE_ROOT; };
 		D934ADBA20682DA8003673C3 /* Medication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medication.swift; sourceTree = "<group>"; };
+		D98911272068A077008EA4C6 /* AddMedicationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddMedicationView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				D934ADAC206820A5003673C3 /* WelcomeScreen.xib */,
+				D98911272068A077008EA4C6 /* AddMedicationView.xib */,
 				D934ADB520682AC6003673C3 /* ScrollableForm.swift */,
 				D934ADB820682D0D003673C3 /* Patient.swift */,
 				D934ADBA20682DA8003673C3 /* Medication.swift */,
@@ -187,6 +190,7 @@
 				D934AD9A2067F85B003673C3 /* Assets.xcassets in Resources */,
 				D934AD982067F85B003673C3 /* Main.storyboard in Resources */,
 				D934ADA52067FA19003673C3 /* Splash.storyboard in Resources */,
+				D98911282068A077008EA4C6 /* AddMedicationView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
