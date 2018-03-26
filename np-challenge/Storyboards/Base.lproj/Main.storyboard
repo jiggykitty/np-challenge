@@ -31,11 +31,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="sR4-Tu-OcH" firstAttribute="trailing" secondItem="Fih-vV-fSh" secondAttribute="trailing" constant="-8" id="A6p-Ym-HGz"/>
-                            <constraint firstItem="cIK-Z6-K3C" firstAttribute="trailing" secondItem="Fih-vV-fSh" secondAttribute="trailing" id="Oia-cb-NAL"/>
-                            <constraint firstItem="cIK-Z6-K3C" firstAttribute="bottom" secondItem="Fih-vV-fSh" secondAttribute="bottom" id="VYj-Kh-5Xd"/>
+                            <constraint firstItem="cIK-Z6-K3C" firstAttribute="trailing" secondItem="qBk-jv-1I1" secondAttribute="trailing" id="Oia-cb-NAL"/>
+                            <constraint firstItem="cIK-Z6-K3C" firstAttribute="bottom" secondItem="qBk-jv-1I1" secondAttribute="bottom" id="VYj-Kh-5Xd"/>
                             <constraint firstItem="cIK-Z6-K3C" firstAttribute="top" secondItem="Fih-vV-fSh" secondAttribute="top" id="WBj-by-pzm"/>
                             <constraint firstItem="sR4-Tu-OcH" firstAttribute="top" secondItem="Fih-vV-fSh" secondAttribute="top" id="jw1-gJ-pQA"/>
-                            <constraint firstItem="cIK-Z6-K3C" firstAttribute="leading" secondItem="Fih-vV-fSh" secondAttribute="leading" id="o7l-EY-sHn"/>
+                            <constraint firstItem="cIK-Z6-K3C" firstAttribute="leading" secondItem="qBk-jv-1I1" secondAttribute="leading" id="o7l-EY-sHn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Fih-vV-fSh"/>
                     </view>

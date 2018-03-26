@@ -23,11 +23,19 @@ class ScrollingContainerViewController: UIViewController {
         // Keep logo floating
         nxLogo.layer.zPosition = 1
         
+        scrollView.translatesAutoresizingMaskIntoConstraints = false
+        
         // Add welcome view with name input
         let welcomeScreen = Bundle.main.loadNibNamed("WelcomeScreen", owner: self, options: nil)?.first as! WelcomeScreen
         welcomeScreen.delegate = self
-        welcomeScreen.frame = CGRect(x: welcomeScreen.frame.origin.x, y: 100, width: welcomeScreen.frame.width, height: welcomeScreen.frame.height)
+        welcomeScreen.translatesAutoresizingMaskIntoConstraints = false
         scrollView.addSubview(welcomeScreen)
+        
+        welcomeScreen.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 300)
+        welcomeScreen.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor)
+        welcomeScreen.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor)
+        welcomeScreen.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor)
+        
     }
 
     override func didReceiveMemoryWarning() {
