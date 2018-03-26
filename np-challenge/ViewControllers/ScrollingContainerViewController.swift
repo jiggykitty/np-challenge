@@ -25,17 +25,21 @@ class ScrollingContainerViewController: UIViewController {
         
         scrollView.translatesAutoresizingMaskIntoConstraints = false
         
+        scrollView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        scrollView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        scrollView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        
         // Add welcome view with name input
         let welcomeScreen = Bundle.main.loadNibNamed("WelcomeScreen", owner: self, options: nil)?.first as! WelcomeScreen
         welcomeScreen.delegate = self
         welcomeScreen.translatesAutoresizingMaskIntoConstraints = false
         scrollView.addSubview(welcomeScreen)
         
-        welcomeScreen.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 300)
-        welcomeScreen.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor)
-        welcomeScreen.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor)
-        welcomeScreen.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor)
-        
+        welcomeScreen.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 0).isActive = true
+        welcomeScreen.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor).isActive = true
+        welcomeScreen.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor).isActive = true
+        welcomeScreen.bottomAnchor.constraint(lessThanOrEqualTo: scrollView.bottomAnchor).isActive = true
     }
 
     override func didReceiveMemoryWarning() {

@@ -30,6 +30,7 @@
                     <rect key="frame" x="16" y="144" width="343" height="36"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="36" id="NlK-eg-ekx"/>
+                        <constraint firstAttribute="width" constant="343" id="hDb-N1-JNP"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="26"/>
                     <nil key="textColor"/>
@@ -38,6 +39,7 @@
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cLF-CE-JPf" customClass="UnderlinedTextField" customModule="np_challenge" customModuleProvider="target">
                     <rect key="frame" x="16" y="188" width="343" height="52"/>
                     <constraints>
+                        <constraint firstAttribute="width" constant="343" id="Khw-Mn-TkM"/>
                         <constraint firstAttribute="height" constant="52" id="sKv-hw-Ij6"/>
                     </constraints>
                     <nil key="textColor"/>
@@ -71,18 +73,18 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="IuL-fy-f2Q" secondAttribute="trailing" constant="16" id="0TU-ds-Cb6"/>
-                <constraint firstItem="8Ku-Wa-SlG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="6Bh-rV-1IF"/>
-                <constraint firstItem="cLF-CE-JPf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="Awb-k9-A8w"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="qcO-g8-xnQ" secondAttribute="trailing" constant="16" id="KgL-5n-WoF"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="IuL-fy-f2Q" secondAttribute="bottom" constant="50" id="Ohl-Ar-opi"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="8Ku-Wa-SlG" secondAttribute="trailing" constant="16" id="QUp-mB-uzr"/>
+                <constraint firstAttribute="trailing" secondItem="IuL-fy-f2Q" secondAttribute="trailing" constant="16" id="0TU-ds-Cb6"/>
+                <constraint firstItem="8Ku-Wa-SlG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="6Bh-rV-1IF"/>
+                <constraint firstItem="cLF-CE-JPf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="Awb-k9-A8w"/>
+                <constraint firstAttribute="trailing" secondItem="qcO-g8-xnQ" secondAttribute="trailing" constant="16" id="KgL-5n-WoF"/>
+                <constraint firstAttribute="bottom" secondItem="IuL-fy-f2Q" secondAttribute="bottom" constant="50" id="Ohl-Ar-opi"/>
+                <constraint firstAttribute="trailing" secondItem="8Ku-Wa-SlG" secondAttribute="trailing" constant="16" id="QUp-mB-uzr"/>
                 <constraint firstItem="IuL-fy-f2Q" firstAttribute="top" secondItem="cLF-CE-JPf" secondAttribute="bottom" constant="30" id="bLv-mm-obK"/>
-                <constraint firstItem="qcO-g8-xnQ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="f3E-Yn-tER"/>
+                <constraint firstItem="qcO-g8-xnQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="f3E-Yn-tER"/>
                 <constraint firstItem="8Ku-Wa-SlG" firstAttribute="top" secondItem="qcO-g8-xnQ" secondAttribute="bottom" constant="8" id="ky7-74-AbH"/>
-                <constraint firstItem="qcO-g8-xnQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="l31-ax-WOx"/>
+                <constraint firstItem="qcO-g8-xnQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="l31-ax-WOx"/>
                 <constraint firstItem="cLF-CE-JPf" firstAttribute="top" secondItem="8Ku-Wa-SlG" secondAttribute="bottom" constant="8" id="mpi-mz-tXI"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="cLF-CE-JPf" secondAttribute="trailing" constant="16" id="zPP-V0-NbQ"/>
+                <constraint firstAttribute="trailing" secondItem="cLF-CE-JPf" secondAttribute="trailing" constant="16" id="zPP-V0-NbQ"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
@@ -90,7 +92,7 @@
             <connections>
                 <outlet property="nameField" destination="cLF-CE-JPf" id="qga-38-hxm"/>
             </connections>
-            <point key="canvasLocation" x="33.5" y="-103.5"/>
+            <point key="canvasLocation" x="33.5" y="-104"/>
         </view>
     </objects>
 </document>
