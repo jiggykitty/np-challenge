@@ -53,24 +53,22 @@ class ScrollingContainerViewController: UIViewController {
         nextView.topAnchor.constraint(equalTo: currentView!.bottomAnchor, constant: 0).isActive = true
         nextView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor).isActive = true
         nextView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor).isActive = true
-        nextView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor, constant: -250).isActive = true
-        
+        nextView.bottomAnchor.constraint(lessThanOrEqualTo: scrollView.bottomAnchor, constant: -250).isActive = true
         currentView = nextView
         
         scrollView.layoutIfNeeded()
-        
-        print(nextView.frame.maxY)
-        
         scrollView.scrollToBottom(animated: true)
+    }
+    
+    func askMedication() {
+        let nextView = Bundle.main.loadNibNamed("AddMedicationView", owner: self, options: nil)?.first as! UIView
+        addNextView(nextView)
     }
 }
 
 extension UIScrollView {
     func scrollToBottom(animated: Bool) {
-        print(self.contentSize.height)
-        print(self.bounds.size.height)
-        if self.contentSize.height < self.bounds.size.height { print("yarak"); return }
-        print("kerane")
+        if self.contentSize.height < self.bounds.size.height { return }
         let bottomOffset = CGPoint(x: 0, y: self.contentSize.height - self.bounds.size.height)
         self.setContentOffset(bottomOffset, animated: animated)
     }
@@ -79,7 +77,6 @@ extension UIScrollView {
 extension ScrollingContainerViewController: ScrollableForm {
     func passName(name: String) {
         patient = Patient(name)
-        let nextView = Bundle.main.loadNibNamed("AddMedicationView", owner: self, options: nil)?.first as! UIView
-        addNextView(nextView)
+        askMedication()
     }
 }
