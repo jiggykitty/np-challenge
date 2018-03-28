@@ -15,4 +15,10 @@ class Patient {
     public init(_ name: String) {
         self.name = name
     }
+    
+    public func addMedication(_ name: String) {
+        // Here, get medicine information from openFDA
+        let medication = Medication(name: name, description: nil)
+        self.prescriptions?.append(medication)
+    }
 }

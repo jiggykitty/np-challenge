@@ -49,10 +49,10 @@ Nexpil.</string>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IuL-fy-f2Q" customClass="RoundButton" customModule="np_challenge" customModuleProvider="target">
-                    <rect key="frame" x="239" y="270" width="120" height="30"/>
+                    <rect key="frame" x="209" y="270" width="150" height="30"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="eP2-v0-3ff"/>
-                        <constraint firstAttribute="width" constant="120" id="lSD-IJ-9Me"/>
+                        <constraint firstAttribute="width" constant="150" id="lSD-IJ-9Me"/>
                     </constraints>
                     <state key="normal" title="submit">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

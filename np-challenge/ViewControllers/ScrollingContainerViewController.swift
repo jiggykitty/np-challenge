@@ -17,6 +17,7 @@ class ScrollingContainerViewController: UIViewController {
     // MARK: Variables
     var patient: Patient?
     var currentView: UIView?
+    var delegate: MedicationPassable?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,8 +62,11 @@ class ScrollingContainerViewController: UIViewController {
     }
     
     func askMedication() {
-        let nextView = Bundle.main.loadNibNamed("AddMedicationView", owner: self, options: nil)?.first as! UIView
-        addNextView(nextView)
+        let vc = AskMedicationViewController(nibName: "AddMedicationView", bundle: nil)
+        self.addChildViewController(vc)
+        vc.delegate = self
+        addNextView(vc.view)
+        vc.willMove(toParentViewController: self)
     }
 }
 
@@ -71,6 +75,12 @@ extension UIScrollView {
         if self.contentSize.height < self.bounds.size.height { return }
         let bottomOffset = CGPoint(x: 0, y: self.contentSize.height - self.bounds.size.height)
         self.setContentOffset(bottomOffset, animated: animated)
+    }
+}
+
+extension ScrollingContainerViewController: MedicationPassable {
+    func passMedication(_ name: String) {
+        self.patient?.addMedication(name)
     }
 }
 

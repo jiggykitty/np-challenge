@@ -9,3 +9,7 @@
 protocol ScrollableForm {
     func passName(name: String)
 }
+
+protocol MedicationPassable {
+    func passMedication(_ name: String)
+}
