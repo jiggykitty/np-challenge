@@ -47,8 +47,10 @@ class ScrollingContainerViewController: UIViewController {
     }
     
     func addNextView(_ nextView: UIView) {
-        nextView.translatesAutoresizingMaskIntoConstraints = false
+        currentView?.isUserInteractionEnabled = false
+        currentView?.alpha = 0.5
         
+        nextView.translatesAutoresizingMaskIntoConstraints = false
         scrollView.addSubview(nextView)
         
         nextView.topAnchor.constraint(equalTo: currentView!.bottomAnchor, constant: 0).isActive = true
@@ -61,13 +63,6 @@ class ScrollingContainerViewController: UIViewController {
         scrollView.scrollToBottom(animated: true)
     }
     
-    func askMedication() {
-        let vc = AskMedicationViewController(nibName: "AddMedicationView", bundle: nil)
-        self.addChildViewController(vc)
-        vc.delegate = self
-        addNextView(vc.view)
-        vc.willMove(toParentViewController: self)
-    }
 }
 
 extension UIScrollView {
@@ -81,12 +76,29 @@ extension UIScrollView {
 extension ScrollingContainerViewController: MedicationPassable {
     func passMedication(_ name: String) {
         self.patient?.addMedication(name)
+        askMoreMeds()
     }
 }
 
 extension ScrollingContainerViewController: ScrollableForm {
     func passName(name: String) {
         patient = Patient(name)
-        askMedication()
+        addMedication()
+    }
+    
+    func addMedication() {
+        let vc = AddMedicationViewController(nibName: "AddMedicationView", bundle: nil)
+        self.addChildViewController(vc)
+        vc.delegate = self
+        addNextView(vc.view)
+        vc.willMove(toParentViewController: self)
+    }
+    
+    func askMoreMeds() {
+        let vc = AskMedicationViewController(nibName: "AskMedicationView", bundle: nil)
+        self.addChildViewController(vc)
+        vc.delegate = self
+        addNextView(vc.view)
+        vc.willMove(toParentViewController: self)
     }
 }

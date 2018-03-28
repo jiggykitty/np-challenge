@@ -50,7 +50,6 @@ class DropDownViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.delegate?.passMedication(results[indexPath.row])
-        self.dismiss(animated: true, completion: nil)
     }
     
     func getSuggestions(term: String) {

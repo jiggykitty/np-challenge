@@ -8,6 +8,8 @@
 
 protocol ScrollableForm {
     func passName(name: String)
+    func addMedication()
+    func askMoreMeds()
 }
 
 protocol MedicationPassable {

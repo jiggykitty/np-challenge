@@ -5,48 +5,41 @@
 //  Created by Cagri Sahan on 3/27/18.
 //  Copyright © 2018 Cagri Sahan. All rights reserved.
 //
+
 import UIKit
 
-class AskMedicationViewController: UIViewController, UITextFieldDelegate {
+class AskMedicationViewController: UIViewController {
     
-    @IBOutlet weak var searchField: UnderlinedTextField!
-    var dropDown: DropDownViewController?
-    var delegate: MedicationPassable?
-    var medication: String?
     
-    @IBAction func submitButtonPressed(_ sender: Any) {
+    @IBAction func yesButtonPressed(_ sender: Any) {
+        delegate!.addMedication()
     }
+    
+    @IBAction func noButtonPressed(_ sender: Any) {
+    }
+    
+    var delegate: ScrollableForm?
     
     override func viewDidLoad() {
-        searchField.delegate = self
-        searchField.addTarget(self, action: #selector(openDropDown), for: UIControlEvents.editingDidBegin)
-        searchField.addTarget(self, action: #selector(updateText), for: UIControlEvents.editingChanged)
-        searchField.spellCheckingType = .no
-    }
-    
-    @objc func openDropDown() {
-        dropDown = DropDownViewController(style: .plain)
-        dropDown?.delegate = self
-        addChildViewController(dropDown!)
-        let parentFrame = searchField.frame
-        dropDown!.view.translatesAutoresizingMaskIntoConstraints = false
-        dropDown!.view.frame = CGRect(x: parentFrame.minX, y: parentFrame.maxY, width: parentFrame.width, height: 100)
-        self.view.addSubview(dropDown!.view)
-        dropDown!.didMove(toParentViewController: self)
-    }
-    
-    @objc func updateText() {
-        dropDown?.textField = searchField.text ?? ""
-    }
-}
+        super.viewDidLoad()
 
-extension AskMedicationViewController: MedicationPassable {
-    func passMedication(_ name: String) {
-        self.delegate?.passMedication(name)
-        self.searchField.text = name
-        self.searchField.resignFirstResponder()
-        dropDown?.willMove(toParentViewController: nil)
-        dropDown?.view.removeFromSuperview()
-        dropDown?.removeFromParentViewController()
+        // Do any additional setup after loading the view.
     }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
 }

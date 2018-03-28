@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D912B6C7206AB6A40010B42B /* AskMedicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D912B6C6206AB6A40010B42B /* AskMedicationViewController.swift */; };
+		D912B6C7206AB6A40010B42B /* AddMedicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D912B6C6206AB6A40010B42B /* AddMedicationViewController.swift */; };
 		D912B6C9206AE5040010B42B /* DropDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D912B6C8206AE5040010B42B /* DropDownViewController.swift */; };
 		D912B6CB206B0F980010B42B /* AskMedicationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D912B6CA206B0F980010B42B /* AskMedicationView.xib */; };
+		D912B6CD206B190F0010B42B /* AskMedicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D912B6CC206B190F0010B42B /* AskMedicationViewController.swift */; };
 		D934AD932067F85B003673C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D934AD922067F85B003673C3 /* AppDelegate.swift */; };
 		D934AD982067F85B003673C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D934AD962067F85B003673C3 /* Main.storyboard */; };
 		D934AD9A2067F85B003673C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D934AD992067F85B003673C3 /* Assets.xcassets */; };
@@ -28,9 +29,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D912B6C6206AB6A40010B42B /* AskMedicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskMedicationViewController.swift; sourceTree = "<group>"; };
+		D912B6C6206AB6A40010B42B /* AddMedicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMedicationViewController.swift; sourceTree = "<group>"; };
 		D912B6C8206AE5040010B42B /* DropDownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownViewController.swift; sourceTree = "<group>"; };
 		D912B6CA206B0F980010B42B /* AskMedicationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AskMedicationView.xib; sourceTree = "<group>"; };
+		D912B6CC206B190F0010B42B /* AskMedicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskMedicationViewController.swift; sourceTree = "<group>"; };
 		D934AD8F2067F85B003673C3 /* np-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "np-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D934AD922067F85B003673C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D934AD972067F85B003673C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -115,7 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				D934ADA62067FD92003673C3 /* SplashScreenViewController.swift */,
-				D912B6C6206AB6A40010B42B /* AskMedicationViewController.swift */,
+				D912B6C6206AB6A40010B42B /* AddMedicationViewController.swift */,
+				D912B6CC206B190F0010B42B /* AskMedicationViewController.swift */,
 				D934ADAA206813D9003673C3 /* ScrollingContainerViewController.swift */,
 				D912B6C8206AE5040010B42B /* DropDownViewController.swift */,
 			);
@@ -212,7 +215,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D934ADAF20682330003673C3 /* WelcomeScreen.swift in Sources */,
-				D912B6C7206AB6A40010B42B /* AskMedicationViewController.swift in Sources */,
+				D912B6CD206B190F0010B42B /* AskMedicationViewController.swift in Sources */,
+				D912B6C7206AB6A40010B42B /* AddMedicationViewController.swift in Sources */,
 				D934ADA920680F57003673C3 /* RoundButton.swift in Sources */,
 				D934ADAB206813D9003673C3 /* ScrollingContainerViewController.swift in Sources */,
 				D934ADB1206824E4003673C3 /* UnderlinedTextField.swift in Sources */,
