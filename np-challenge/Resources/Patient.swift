@@ -10,15 +10,15 @@ class Patient {
     let name: String
     var email: String?
     var phone: String?
-    var prescriptions: [Medication]?
+    var prescriptions = [Medication]()
     
     public init(_ name: String) {
         self.name = name
     }
     
-    public func addMedication(_ name: String) {
+    public func addPrescription(_ name: String) {
         // Here, get medicine information from openFDA
         let medication = Medication(name: name, description: nil)
-        self.prescriptions?.append(medication)
+        self.prescriptions.append(medication)
     }
 }

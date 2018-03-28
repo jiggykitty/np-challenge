@@ -19,6 +19,16 @@ class ScrollingContainerViewController: UIViewController {
     var currentView: UIView?
     var delegate: MedicationPassable?
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "Results" {
+            if let destination = segue.destination as? ResultScreenViewController {
+                destination.patient = self.patient!
+                destination.parentVC = self
+            }
+        }
+    }
+    
+    // MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -46,6 +56,7 @@ class ScrollingContainerViewController: UIViewController {
         currentView = welcomeScreen
     }
     
+    // MARK: Functions
     func addNextView(_ nextView: UIView) {
         currentView?.isUserInteractionEnabled = false
         currentView?.alpha = 0.5
@@ -65,6 +76,7 @@ class ScrollingContainerViewController: UIViewController {
     
 }
 
+// MARK: Extensions
 extension UIScrollView {
     func scrollToBottom(animated: Bool) {
         if self.contentSize.height < self.bounds.size.height { return }
@@ -75,7 +87,7 @@ extension UIScrollView {
 
 extension ScrollingContainerViewController: MedicationPassable {
     func passMedication(_ name: String) {
-        self.patient?.addMedication(name)
+        self.patient?.addPrescription(name)
         askMoreMeds()
     }
 }
@@ -100,5 +112,9 @@ extension ScrollingContainerViewController: ScrollableForm {
         vc.delegate = self
         addNextView(vc.view)
         vc.willMove(toParentViewController: self)
+    }
+    
+    func moveToResults() {
+        self.performSegue(withIdentifier: "Results", sender: self.patient)
     }
 }
