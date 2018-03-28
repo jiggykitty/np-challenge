@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5Lg-3T-xi6">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ZZ1-Zj-8kS">
+            <objects>
+                <viewController id="5Lg-3T-xi6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yau-bY-uUu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pexels-photo-796545" translatesAutoresizingMaskIntoConstraints="NO" id="9yV-AU-JuV">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nexpil" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1x2-so-JI5">
+                                <rect key="frame" x="16" y="565.5" width="141" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="50"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9yV-AU-JuV" firstAttribute="top" secondItem="yau-bY-uUu" secondAttribute="top" id="7ac-XK-ouI"/>
+                            <constraint firstItem="9yV-AU-JuV" firstAttribute="leading" secondItem="yau-bY-uUu" secondAttribute="leading" id="eq7-9f-egc"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="9yV-AU-JuV" secondAttribute="bottom" id="j5a-DL-0Pc"/>
+                            <constraint firstAttribute="trailing" secondItem="9yV-AU-JuV" secondAttribute="trailing" id="uli-SW-6si"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tnV-wt-zK5"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vdw-3c-nhC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-225" y="99"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pexels-photo-796545" width="2801" height="1867"/>
+    </resources>
+</document>

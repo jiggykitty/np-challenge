@@ -11,6 +11,7 @@ import Foundation
 
 class DropDownViewController: UITableViewController {
     
+    // MARK: Variables
     var delegate: MedicationPassable?
     var results = [String]()
     var textField: String = "" {
@@ -19,25 +20,13 @@ class DropDownViewController: UITableViewController {
         }
     }
     
+    // MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "reuseIdentifier")
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-        
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     // MARK: - Table view data source
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return results.count
     }
@@ -52,6 +41,7 @@ class DropDownViewController: UITableViewController {
         self.delegate?.passMedication(results[indexPath.row])
     }
     
+    // MARK: Functions
     func getSuggestions(term: String) {
         let urlString = "http://ec2-54-162-72-84.compute-1.amazonaws.com/complete.php?Name=\(term)"
         let url = URL(string: urlString.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!)

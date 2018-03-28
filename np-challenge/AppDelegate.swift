@@ -34,8 +34,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func showSplashScreen() {
         let storyboard = UIStoryboard(name: "Splash", bundle: nil)
         let splashScreenVC = storyboard.instantiateViewController(withIdentifier: "SplashScreenVC")
-        self.window?.rootViewController?.present(splashScreenVC, animated: false, completion: nil)
+        self.topController().present(splashScreenVC, animated: false, completion: nil)
         
+    }
+    
+    func topController(_ parent: UIViewController? = nil) -> UIViewController {
+        if let vc = parent {
+            if let tab = vc as? UITabBarController, let selected = tab.selectedViewController {
+                return topController(selected)
+            } else if let nav = vc as? UINavigationController, let top = nav.topViewController {
+                return topController(top)
+            } else if let presented = vc.presentedViewController {
+                return topController(presented)
+            } else {
+                return vc
+            }
+        } else {
+            print("lala")
+            return topController(UIApplication.shared.keyWindow!.rootViewController!)
+        }
     }
 }
 

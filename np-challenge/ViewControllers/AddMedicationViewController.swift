@@ -9,10 +9,10 @@ import UIKit
 
 class AddMedicationViewController: UIViewController, UITextFieldDelegate {
     
+    // MARK: IBOutlets
     @IBOutlet weak var searchField: UnderlinedTextField!
-    var dropDown: DropDownViewController?
-    var delegate: MedicationPassable?
-    
+
+    // MARK: IBActions
     @IBAction func submitButtonPressed(_ sender: Any) {
         if let medication = searchField.text {
             if medication != "" {
@@ -21,6 +21,11 @@ class AddMedicationViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    // MARK: Variables
+    var dropDown: DropDownViewController?
+    var delegate: MedicationPassable?
+    
+    // MARK: Lifecycle
     override func viewDidLoad() {
         searchField.delegate = self
         searchField.addTarget(self, action: #selector(openDropDown), for: UIControlEvents.editingDidBegin)
@@ -28,6 +33,7 @@ class AddMedicationViewController: UIViewController, UITextFieldDelegate {
         searchField.spellCheckingType = .no
     }
     
+    // MARK: Functons
     @objc func openDropDown() {
         dropDown = DropDownViewController(style: .plain)
         dropDown?.delegate = self
@@ -44,6 +50,7 @@ class AddMedicationViewController: UIViewController, UITextFieldDelegate {
     }
 }
 
+// MARK: Extensions
 extension AddMedicationViewController: MedicationPassable {
     func passMedication(_ name: String) {
         self.searchField.text = name
