@@ -38,6 +38,10 @@
 		D96B8FAC207B1CB3004EE45A /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D96B8FA2207B1CB2004EE45A /* OpenSans-BoldItalic.ttf */; };
 		D96B8FAD207B1CB3004EE45A /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D96B8FA3207B1CB2004EE45A /* OpenSans-SemiBold.ttf */; };
 		D96B8FAE207B1CB3004EE45A /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D96B8FA4207B1CB3004EE45A /* OpenSans-ExtraBoldItalic.ttf */; };
+		D96B8FB1207B2A54004EE45A /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96B8FB0207B2A54004EE45A /* Results.swift */; };
+		D96B8FB3207B2A92004EE45A /* Drug.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96B8FB2207B2A92004EE45A /* Drug.swift */; };
+		D96B8FB6207B2BA5004EE45A /* DrugInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96B8FB4207B2BA5004EE45A /* DrugInfoViewController.swift */; };
+		D96B8FB7207B2BA5004EE45A /* DrugInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D96B8FB5207B2BA5004EE45A /* DrugInfoView.xib */; };
 		D98911282068A077008EA4C6 /* AddMedicationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D98911272068A077008EA4C6 /* AddMedicationView.xib */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +79,10 @@
 		D96B8FA2207B1CB2004EE45A /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
 		D96B8FA3207B1CB2004EE45A /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		D96B8FA4207B1CB3004EE45A /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		D96B8FB0207B2A54004EE45A /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
+		D96B8FB2207B2A92004EE45A /* Drug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drug.swift; sourceTree = "<group>"; };
+		D96B8FB4207B2BA5004EE45A /* DrugInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugInfoViewController.swift; sourceTree = "<group>"; };
+		D96B8FB5207B2BA5004EE45A /* DrugInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrugInfoView.xib; sourceTree = "<group>"; };
 		D98911272068A077008EA4C6 /* AddMedicationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddMedicationView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,6 +154,7 @@
 			children = (
 				D934ADA62067FD92003673C3 /* SplashScreenViewController.swift */,
 				D912B6C6206AB6A40010B42B /* AddMedicationViewController.swift */,
+				D96B8FB4207B2BA5004EE45A /* DrugInfoViewController.swift */,
 				D912B6CC206B190F0010B42B /* AskMedicationViewController.swift */,
 				D934ADAA206813D9003673C3 /* ScrollingContainerViewController.swift */,
 				D912B6D0206B369B0010B42B /* ResultScreenViewController.swift */,
@@ -157,6 +166,7 @@
 		D934ADB720682AED003673C3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D96B8FAF207B2A33004EE45A /* JSON */,
 				D96B8F9A207B1C0C004EE45A /* Views */,
 				D96B8F99207B1C03004EE45A /* Fonts */,
 				D934ADB520682AC6003673C3 /* Protocols.swift */,
@@ -189,8 +199,18 @@
 				D934ADAC206820A5003673C3 /* WelcomeScreen.xib */,
 				D98911272068A077008EA4C6 /* AddMedicationView.xib */,
 				D912B6CA206B0F980010B42B /* AskMedicationView.xib */,
+				D96B8FB5207B2BA5004EE45A /* DrugInfoView.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		D96B8FAF207B2A33004EE45A /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				D96B8FB0207B2A54004EE45A /* Results.swift */,
+				D96B8FB2207B2A92004EE45A /* Drug.swift */,
+			);
+			path = JSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +276,7 @@
 				D96B8FAE207B1CB3004EE45A /* OpenSans-ExtraBoldItalic.ttf in Resources */,
 				D96B8FA6207B1CB3004EE45A /* OpenSans-Regular.ttf in Resources */,
 				D934ADAD206820A5003673C3 /* WelcomeScreen.xib in Resources */,
+				D96B8FB7207B2BA5004EE45A /* DrugInfoView.xib in Resources */,
 				D912B6CB206B0F980010B42B /* AskMedicationView.xib in Resources */,
 				D934AD9D2067F85B003673C3 /* LaunchScreen.storyboard in Resources */,
 				D9583307206C0A1E003BCA7D /* Launch.storyboard in Resources */,
@@ -280,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D96B8FB6207B2BA5004EE45A /* DrugInfoViewController.swift in Sources */,
 				D934ADAF20682330003673C3 /* WelcomeScreen.swift in Sources */,
 				D912B6CD206B190F0010B42B /* AskMedicationViewController.swift in Sources */,
 				D912B6C7206AB6A40010B42B /* AddMedicationViewController.swift in Sources */,
@@ -287,8 +309,10 @@
 				D934ADAB206813D9003673C3 /* ScrollingContainerViewController.swift in Sources */,
 				D934ADB1206824E4003673C3 /* UnderlinedTextField.swift in Sources */,
 				D934ADB620682AC6003673C3 /* Protocols.swift in Sources */,
+				D96B8FB3207B2A92004EE45A /* Drug.swift in Sources */,
 				D934ADB920682D0D003673C3 /* Patient.swift in Sources */,
 				D934AD932067F85B003673C3 /* AppDelegate.swift in Sources */,
+				D96B8FB1207B2A54004EE45A /* Results.swift in Sources */,
 				D912B6D1206B369B0010B42B /* ResultScreenViewController.swift in Sources */,
 				D912B6D3206B41EB0010B42B /* MedicationTableViewCell.swift in Sources */,
 				D934ADBB20682DA8003673C3 /* Medication.swift in Sources */,
