@@ -48,7 +48,15 @@ class ScrollingContainerViewController: UIViewController {
         welcomeScreen.translatesAutoresizingMaskIntoConstraints = false
         scrollView.addSubview(welcomeScreen)
         
-        welcomeScreen.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 100).isActive = true
+        let topMargin: CGFloat
+        if self.traitCollection.verticalSizeClass == .compact {
+            topMargin = 50.0
+        }
+        else {
+            topMargin = 100.0
+        }
+        
+        welcomeScreen.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: topMargin).isActive = true
         welcomeScreen.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor).isActive = true
         welcomeScreen.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor).isActive = true
         welcomeScreen.bottomAnchor.constraint(lessThanOrEqualTo: scrollView.bottomAnchor).isActive = true
@@ -71,9 +79,21 @@ class ScrollingContainerViewController: UIViewController {
         currentView = nextView
         
         scrollView.layoutIfNeeded()
-        scrollView.scrollToBottom(animated: true)
+        
+        if self.traitCollection.verticalSizeClass == .compact {
+            scrollToCurrentView(animated: true)
+        }
+        else {
+            scrollView.scrollToBottom(animated: true)
+        }
     }
     
+    // I will use this to scroll to the current question when layout is changed
+    func scrollToCurrentView(animated: Bool) {
+        guard currentView != nil else { return }
+        let viewMinYOffset = CGPoint(x: 0.0, y: currentView!.frame.minY)
+        scrollView.setContentOffset(viewMinYOffset, animated: animated)
+    }
 }
 
 // MARK: Extensions
@@ -116,5 +136,11 @@ extension ScrollingContainerViewController: ScrollableForm {
     
     func moveToResults() {
         self.performSegue(withIdentifier: "Results", sender: self.patient)
+    }
+}
+
+extension ScrollingContainerViewController {
+    override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
+        scrollToCurrentView(animated: false)
     }
 }
