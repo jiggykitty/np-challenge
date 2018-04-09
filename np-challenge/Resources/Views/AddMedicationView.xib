@@ -26,7 +26,7 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="360"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="390"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now we are going to have you enter some prescription medications" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="maL-0u-QqM">
@@ -49,6 +49,33 @@
                     <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="40"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uyG-kn-AFg" customClass="RoundButton" customModule="np_challenge" customModuleProvider="target">
+                    <rect key="frame" x="209" y="330" width="150" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Ugj-7c-BRI"/>
+                        <constraint firstAttribute="width" constant="150" id="WJR-My-ZQh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
+                    <state key="normal" title="cancel">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="cancelButtonPressed:" destination="-1" eventType="touchUpInside" id="ooZ-wd-Bjy"/>
+                        <action selector="submitButtonPressed:" destination="-1" eventType="touchUpInside" id="Gyo-4J-8bz"/>
+                    </connections>
+                </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iB4-BI-ZGt" customClass="RoundButton" customModule="np_challenge" customModuleProvider="target">
                     <rect key="frame" x="209" y="292" width="150" height="30"/>
                     <constraints>
@@ -77,15 +104,20 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="pVB-Wu-kfa" firstAttribute="top" secondItem="maL-0u-QqM" secondAttribute="bottom" constant="8" id="2t2-YU-eUs"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="pVB-Wu-kfa" secondAttribute="trailing" constant="16" id="BCz-IM-5wO"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="iB4-BI-ZGt" secondAttribute="trailing" constant="16" id="H8U-Pm-djj"/>
-                <constraint firstItem="iB4-BI-ZGt" firstAttribute="top" secondItem="pVB-Wu-kfa" secondAttribute="bottom" constant="130" id="bjJ-5N-sNc"/>
-                <constraint firstItem="maL-0u-QqM" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="cUT-bt-a3E"/>
-                <constraint firstItem="pVB-Wu-kfa" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="lW1-RX-CUm"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="iB4-BI-ZGt" secondAttribute="bottom" constant="38" id="ul1-OQ-T9L"/>
-                <constraint firstItem="maL-0u-QqM" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="xCd-Sb-oKg"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="maL-0u-QqM" secondAttribute="trailing" constant="16" id="xXS-Lb-IKH"/>
+                <constraint firstItem="pVB-Wu-kfa" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="9VW-l7-nfX"/>
+                <constraint firstItem="pVB-Wu-kfa" firstAttribute="top" secondItem="maL-0u-QqM" secondAttribute="bottom" constant="8" id="CLQ-rj-Mg6"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="uyG-kn-AFg" secondAttribute="trailing" constant="16" id="FGY-Bz-8dQ"/>
+                <constraint firstItem="uyG-kn-AFg" firstAttribute="top" secondItem="iB4-BI-ZGt" secondAttribute="bottom" constant="8" id="HRu-yW-Axn"/>
+                <constraint firstItem="iB4-BI-ZGt" firstAttribute="top" secondItem="pVB-Wu-kfa" secondAttribute="bottom" constant="130" id="Mth-at-X79"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="pVB-Wu-kfa" secondAttribute="trailing" constant="16" id="Ooi-tm-7GK"/>
+                <constraint firstItem="uyG-kn-AFg" firstAttribute="top" secondItem="iB4-BI-ZGt" secondAttribute="bottom" constant="8" id="RZk-sk-LR0"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="uyG-kn-AFg" secondAttribute="bottom" constant="30" id="fL9-Qd-fsa"/>
+                <constraint firstItem="maL-0u-QqM" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="ksN-nI-BFo"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="maL-0u-QqM" secondAttribute="trailing" constant="16" id="nDE-yQ-VUd"/>
+                <constraint firstItem="maL-0u-QqM" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="oMG-rK-Khk"/>
+                <constraint firstItem="iB4-BI-ZGt" firstAttribute="top" secondItem="pVB-Wu-kfa" secondAttribute="bottom" constant="130" id="oe8-dg-3ZQ"/>
+                <constraint firstItem="pVB-Wu-kfa" firstAttribute="top" secondItem="maL-0u-QqM" secondAttribute="bottom" constant="8" id="t0Q-ZE-q4B"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="iB4-BI-ZGt" secondAttribute="trailing" constant="16" id="vun-3m-KGv"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>

@@ -11,6 +11,8 @@ protocol ScrollableForm {
     func addMedication()
     func askMoreMeds()
     func moveToResults()
+    func passMedication(_ name: String)
+    func cancelInput()
 }
 
 protocol MedicationPassable {

@@ -105,13 +105,6 @@ extension UIScrollView {
     }
 }
 
-extension ScrollingContainerViewController: MedicationPassable {
-    func passMedication(_ name: String) {
-        self.patient?.addPrescription(name)
-        askMoreMeds()
-    }
-}
-
 extension ScrollingContainerViewController: ScrollableForm {
     func passName(name: String) {
         patient = Patient(name)
@@ -136,6 +129,15 @@ extension ScrollingContainerViewController: ScrollableForm {
     
     func moveToResults() {
         self.performSegue(withIdentifier: "Results", sender: self.patient)
+    }
+    
+    func cancelInput() {
+        askMoreMeds()
+    }
+    
+    func passMedication(_ name: String) {
+        self.patient?.addPrescription(name)
+        askMoreMeds()
     }
 }
 
