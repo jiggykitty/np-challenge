@@ -22,14 +22,15 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DrugInfoViewController" customModule="np_challenge" customModuleProvider="target">
             <connections>
                 <outlet property="closeButton" destination="rqK-KM-H3v" id="nlN-yR-FDS"/>
+                <outlet property="container" destination="zvM-MM-IR7" id="zMB-D9-gbP"/>
                 <outlet property="deleteButton" destination="FhX-9i-noA" id="3oX-qH-ZI9"/>
-                <outlet property="drugName" destination="8Eg-5L-8Ba" id="U0p-bv-aYv"/>
+                <outlet property="drugName" destination="8Eg-5L-8Ba" id="h4B-kK-sfz"/>
                 <outlet property="textView" destination="yee-tH-Xqe" id="pGG-hT-04L"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+        <view clearsContextBeforeDrawing="NO" contentMode="center" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -46,8 +47,8 @@
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yee-tH-Xqe">
-                            <rect key="frame" x="8" y="70" width="327" height="521"/>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yee-tH-Xqe">
+                            <rect key="frame" x="8" y="70" width="327" height="511"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                             <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
@@ -61,12 +62,13 @@
                         <constraint firstItem="yee-tH-Xqe" firstAttribute="leading" secondItem="zvM-MM-IR7" secondAttribute="leadingMargin" id="7Vt-3M-TlO"/>
                         <constraint firstItem="8Eg-5L-8Ba" firstAttribute="top" secondItem="zvM-MM-IR7" secondAttribute="top" id="Ohe-uZ-8zw"/>
                         <constraint firstAttribute="trailingMargin" secondItem="yee-tH-Xqe" secondAttribute="trailing" id="WRZ-nW-MOf"/>
-                        <constraint firstAttribute="bottomMargin" secondItem="yee-tH-Xqe" secondAttribute="bottom" id="hPl-Af-UZ0"/>
+                        <constraint firstAttribute="bottomMargin" secondItem="yee-tH-Xqe" secondAttribute="bottom" constant="10" id="hPl-Af-UZ0"/>
                         <constraint firstItem="yee-tH-Xqe" firstAttribute="top" secondItem="8Eg-5L-8Ba" secondAttribute="bottom" id="yqQ-el-0OX"/>
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FhX-9i-noA" customClass="RoundButton" customModule="np_challenge" customModuleProvider="target">
                     <rect key="frame" x="225" y="617" width="90" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="nel-Uz-jAn"/>
                         <constraint firstAttribute="width" constant="90" id="oKp-kY-Oxc"/>
@@ -92,6 +94,7 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqK-KM-H3v" customClass="RoundButton" customModule="np_challenge" customModuleProvider="target">
                     <rect key="frame" x="60" y="617" width="90" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="90" id="2a8-2b-1mR"/>
                         <constraint firstAttribute="height" constant="30" id="7mn-Lu-pdQ"/>
@@ -127,8 +130,9 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="zvM-MM-IR7" secondAttribute="bottom" constant="32" id="vqd-Tl-y6e"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zvM-MM-IR7" secondAttribute="trailing" constant="16" id="xzm-XZ-uxJ"/>
             </constraints>
+            <modalPageSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="33.5" y="53.5"/>
+            <point key="canvasLocation" x="56" y="133"/>
         </view>
     </objects>
 </document>

@@ -75,7 +75,7 @@ class ScrollingContainerViewController: UIViewController {
         nextView.topAnchor.constraint(equalTo: currentView!.bottomAnchor, constant: 0).isActive = true
         nextView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor).isActive = true
         nextView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor).isActive = true
-        nextView.bottomAnchor.constraint(lessThanOrEqualTo: scrollView.bottomAnchor, constant: -250).isActive = true
+        nextView.bottomAnchor.constraint(lessThanOrEqualTo: scrollView.bottomAnchor, constant: -200).isActive = true
         currentView = nextView
         
         scrollView.layoutIfNeeded()

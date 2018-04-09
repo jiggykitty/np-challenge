@@ -23,9 +23,29 @@ class ResultScreenViewController: UIViewController {
     var patient: Patient?
     var parentVC: ScrollableForm?
     
+    // MARK: Functions
+    func showInfo(sender: MedicationTableViewCell) {
+        let vc = DrugInfoViewController(nibName: "DrugInfoView", bundle: nil)
+        vc.modalPresentationStyle = .popover
+        let popover = vc.popoverPresentationController!
+        popover.delegate = self
+        popover.sourceView = sender
+        popover.sourceRect = sender.bounds
+        
+        vc.delegate = self
+        vc.medication = sender.medication!
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    func deletePrescription(_ prescription: Medication) {
+        patient?.removePrescription(prescription)
+        self.tableView.reloadData()
+    }
+    
     // MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.definesPresentationContext = true
         nameField.text = "\(patient?.name ?? "Patient")'s Results"
         tableView.dataSource = self
         tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -35,7 +55,6 @@ class ResultScreenViewController: UIViewController {
             print(item.name)
         }
     }
-    
 }
 
 // MARK: Extensions
@@ -47,7 +66,19 @@ extension ResultScreenViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "medicationCell", for: indexPath) as! MedicationTableViewCell
         cell.translatesAutoresizingMaskIntoConstraints = false
-        cell.nameField.text = patient!.prescriptions[indexPath.row].name
+        cell.medication = patient!.prescriptions[indexPath.row]
+        cell.delegate = self
         return cell
+    }
+}
+
+extension ResultScreenViewController: UIPopoverPresentationControllerDelegate {
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        if self.traitCollection.verticalSizeClass == .regular {
+        return UIModalPresentationStyle.none
+        }
+        else {
+            return UIModalPresentationStyle.fullScreen
+        }
     }
 }

@@ -13,9 +13,16 @@ class MedicationTableViewCell: UITableViewCell {
     @IBOutlet weak var nameField: UILabel!
     
     @IBAction func infoButtonPressed(_ sender: Any) {
+        delegate?.showInfo(sender: self)
     }
     
-    var medication: Medication?
+    var medication: Medication? {
+        didSet {
+            nameField.text = medication?.name
+        }
+    }
+    var delegate: ResultScreenViewController?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -24,6 +31,7 @@ class MedicationTableViewCell: UITableViewCell {
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
+        
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state

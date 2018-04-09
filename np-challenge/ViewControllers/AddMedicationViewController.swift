@@ -24,6 +24,7 @@ class AddMedicationViewController: UIViewController, UITextFieldDelegate {
     @IBAction func cancelButtonPressed(_ sender: Any) {
         self.delegate?.cancelInput()
     }
+    
     // MARK: Variables
     var dropDown: DropDownViewController?
     var delegate: ScrollableForm?

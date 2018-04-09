@@ -15,3 +15,9 @@ class Medication {
         self.description = description
     }
 }
+
+extension Medication: Equatable {
+    static func == (lhs: Medication, rhs: Medication) -> Bool {
+        return lhs.name == rhs.name
+    }
+}

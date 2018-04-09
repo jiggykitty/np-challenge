@@ -21,4 +21,8 @@ class Patient {
         let medication = Medication(name: name, description: nil)
         self.prescriptions.append(medication)
     }
+    
+    public func removePrescription(_ prescription: Medication) {
+        prescriptions = prescriptions.filter { $0 != prescription }
+    }
 }
