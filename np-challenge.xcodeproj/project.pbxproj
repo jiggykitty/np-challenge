@@ -28,6 +28,7 @@
 		D934ADBB20682DA8003673C3 /* Medication.swift in Sources */ = {isa = PBXBuildFile; fileRef = D934ADBA20682DA8003673C3 /* Medication.swift */; };
 		D9583307206C0A1E003BCA7D /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9583306206C0A1E003BCA7D /* Launch.storyboard */; };
 		D962EF3C207BD4E30017656F /* OpenSans.swift in Sources */ = {isa = PBXBuildFile; fileRef = D962EF3B207BD4E30017656F /* OpenSans.swift */; };
+		D962EF3E207BDD3B0017656F /* DataScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D962EF3D207BDD3B0017656F /* DataScreenViewController.swift */; };
 		D96B8FA5207B1CB3004EE45A /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D96B8F9B207B1CB1004EE45A /* OpenSans-Light.ttf */; };
 		D96B8FA6207B1CB3004EE45A /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D96B8F9C207B1CB1004EE45A /* OpenSans-Regular.ttf */; };
 		D96B8FA7207B1CB3004EE45A /* OpenSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D96B8F9D207B1CB1004EE45A /* OpenSans-SemiBoldItalic.ttf */; };
@@ -70,6 +71,7 @@
 		D934ADBA20682DA8003673C3 /* Medication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medication.swift; sourceTree = "<group>"; };
 		D9583306206C0A1E003BCA7D /* Launch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
 		D962EF3B207BD4E30017656F /* OpenSans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSans.swift; sourceTree = "<group>"; };
+		D962EF3D207BDD3B0017656F /* DataScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataScreenViewController.swift; path = "np-challenge/ViewControllers/DataScreenViewController.swift"; sourceTree = SOURCE_ROOT; };
 		D96B8F9B207B1CB1004EE45A /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
 		D96B8F9C207B1CB1004EE45A /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		D96B8F9D207B1CB1004EE45A /* OpenSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				D934ADAA206813D9003673C3 /* ScrollingContainerViewController.swift */,
 				D912B6D0206B369B0010B42B /* ResultScreenViewController.swift */,
 				D912B6C8206AE5040010B42B /* DropDownViewController.swift */,
+				D962EF3D207BDD3B0017656F /* DataScreenViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				D912B6CD206B190F0010B42B /* AskMedicationViewController.swift in Sources */,
 				D912B6C7206AB6A40010B42B /* AddMedicationViewController.swift in Sources */,
 				D934ADA920680F57003673C3 /* RoundButton.swift in Sources */,
+				D962EF3E207BDD3B0017656F /* DataScreenViewController.swift in Sources */,
 				D934ADAB206813D9003673C3 /* ScrollingContainerViewController.swift in Sources */,
 				D934ADB1206824E4003673C3 /* UnderlinedTextField.swift in Sources */,
 				D934ADB620682AC6003673C3 /* Protocols.swift in Sources */,

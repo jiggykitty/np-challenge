@@ -195,10 +195,10 @@
             </objects>
             <point key="canvasLocation" x="245.59999999999999" y="73.313343328335833"/>
         </scene>
-        <!--View Controller-->
+        <!--Data Screen View Controller-->
         <scene sceneID="HZk-dy-VV2">
             <objects>
-                <viewController id="mnI-dT-RA0" sceneMemberID="viewController">
+                <viewController id="mnI-dT-RA0" customClass="DataScreenViewController" customModule="np_challenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oy6-jF-TMP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -378,6 +378,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aZk-tL-0m7"/>
                     </view>
+                    <connections>
+                        <outlet property="dataTable" destination="5Hr-pT-wXo" id="deO-DP-bgP"/>
+                        <outlet property="drugTable" destination="rhp-Dp-x8p" id="gFT-Bc-IR8"/>
+                        <outlet property="nameLabel" destination="QU3-Yy-ba0" id="Z8c-q6-Mog"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XlU-8e-6Om" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
