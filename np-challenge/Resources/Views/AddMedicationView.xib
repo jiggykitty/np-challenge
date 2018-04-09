@@ -9,6 +9,14 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddMedicationViewController" customModule="np_challenge" customModuleProvider="target">
             <connections>
@@ -27,7 +35,7 @@
                         <constraint firstAttribute="width" constant="343" id="G1P-C0-sqT"/>
                         <constraint firstAttribute="height" constant="94" id="Je0-ft-gqr"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="26"/>
+                    <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="23"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -38,7 +46,7 @@
                         <constraint firstAttribute="width" constant="343" id="we0-Wu-wku"/>
                     </constraints>
                     <nil key="textColor"/>
-                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
+                    <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="40"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iB4-BI-ZGt" customClass="RoundButton" customModule="np_challenge" customModuleProvider="target">
@@ -47,6 +55,7 @@
                         <constraint firstAttribute="width" constant="150" id="Aiq-Mt-sQJ"/>
                         <constraint firstAttribute="height" constant="30" id="y9B-lI-yYR"/>
                     </constraints>
+                    <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
                     <state key="normal" title="add to profile">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>

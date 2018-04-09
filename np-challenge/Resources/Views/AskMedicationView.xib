@@ -9,6 +9,14 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AskMedicationViewController" customModule="np_challenge" customModuleProvider="target">
             <connections>
@@ -25,7 +33,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="100" id="CoI-Ol-Qra"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="26"/>
+                    <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="23"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -35,6 +43,7 @@
                         <constraint firstAttribute="width" constant="150" id="gXg-oQ-fEm"/>
                         <constraint firstAttribute="height" constant="30" id="x1x-ka-Fm4"/>
                     </constraints>
+                    <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
                     <state key="normal" title="yes">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
@@ -60,6 +69,7 @@
                         <constraint firstAttribute="height" constant="30" id="49d-ey-sCl"/>
                         <constraint firstAttribute="width" constant="150" id="b0X-7I-fAs"/>
                     </constraints>
+                    <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
                     <state key="normal" title="that's all for now">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>

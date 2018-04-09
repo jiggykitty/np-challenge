@@ -28,6 +28,16 @@
 		D934ADB920682D0D003673C3 /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D934ADB820682D0D003673C3 /* Patient.swift */; };
 		D934ADBB20682DA8003673C3 /* Medication.swift in Sources */ = {isa = PBXBuildFile; fileRef = D934ADBA20682DA8003673C3 /* Medication.swift */; };
 		D9583307206C0A1E003BCA7D /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9583306206C0A1E003BCA7D /* Launch.storyboard */; };
+		D96B8FA5207B1CB3004EE45A /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D96B8F9B207B1CB1004EE45A /* OpenSans-Light.ttf */; };
+		D96B8FA6207B1CB3004EE45A /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D96B8F9C207B1CB1004EE45A /* OpenSans-Regular.ttf */; };
+		D96B8FA7207B1CB3004EE45A /* OpenSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D96B8F9D207B1CB1004EE45A /* OpenSans-SemiBoldItalic.ttf */; };
+		D96B8FA8207B1CB3004EE45A /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D96B8F9E207B1CB2004EE45A /* OpenSans-ExtraBold.ttf */; };
+		D96B8FA9207B1CB3004EE45A /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D96B8F9F207B1CB2004EE45A /* OpenSans-Bold.ttf */; };
+		D96B8FAA207B1CB3004EE45A /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D96B8FA0207B1CB2004EE45A /* OpenSans-Italic.ttf */; };
+		D96B8FAB207B1CB3004EE45A /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D96B8FA1207B1CB2004EE45A /* OpenSans-LightItalic.ttf */; };
+		D96B8FAC207B1CB3004EE45A /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D96B8FA2207B1CB2004EE45A /* OpenSans-BoldItalic.ttf */; };
+		D96B8FAD207B1CB3004EE45A /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D96B8FA3207B1CB2004EE45A /* OpenSans-SemiBold.ttf */; };
+		D96B8FAE207B1CB3004EE45A /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D96B8FA4207B1CB3004EE45A /* OpenSans-ExtraBoldItalic.ttf */; };
 		D98911282068A077008EA4C6 /* AddMedicationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D98911272068A077008EA4C6 /* AddMedicationView.xib */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +65,16 @@
 		D934ADB820682D0D003673C3 /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Patient.swift; path = "np-challenge/Resources/Patient.swift"; sourceTree = SOURCE_ROOT; };
 		D934ADBA20682DA8003673C3 /* Medication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medication.swift; sourceTree = "<group>"; };
 		D9583306206C0A1E003BCA7D /* Launch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
+		D96B8F9B207B1CB1004EE45A /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		D96B8F9C207B1CB1004EE45A /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		D96B8F9D207B1CB1004EE45A /* OpenSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		D96B8F9E207B1CB2004EE45A /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		D96B8F9F207B1CB2004EE45A /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		D96B8FA0207B1CB2004EE45A /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		D96B8FA1207B1CB2004EE45A /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		D96B8FA2207B1CB2004EE45A /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		D96B8FA3207B1CB2004EE45A /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		D96B8FA4207B1CB3004EE45A /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		D98911272068A077008EA4C6 /* AddMedicationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddMedicationView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,14 +157,40 @@
 		D934ADB720682AED003673C3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D934ADAC206820A5003673C3 /* WelcomeScreen.xib */,
-				D98911272068A077008EA4C6 /* AddMedicationView.xib */,
-				D912B6CA206B0F980010B42B /* AskMedicationView.xib */,
+				D96B8F9A207B1C0C004EE45A /* Views */,
+				D96B8F99207B1C03004EE45A /* Fonts */,
 				D934ADB520682AC6003673C3 /* Protocols.swift */,
 				D934ADB820682D0D003673C3 /* Patient.swift */,
 				D934ADBA20682DA8003673C3 /* Medication.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		D96B8F99207B1C03004EE45A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D96B8F9F207B1CB2004EE45A /* OpenSans-Bold.ttf */,
+				D96B8FA2207B1CB2004EE45A /* OpenSans-BoldItalic.ttf */,
+				D96B8F9E207B1CB2004EE45A /* OpenSans-ExtraBold.ttf */,
+				D96B8FA4207B1CB3004EE45A /* OpenSans-ExtraBoldItalic.ttf */,
+				D96B8FA0207B1CB2004EE45A /* OpenSans-Italic.ttf */,
+				D96B8F9B207B1CB1004EE45A /* OpenSans-Light.ttf */,
+				D96B8FA1207B1CB2004EE45A /* OpenSans-LightItalic.ttf */,
+				D96B8F9C207B1CB1004EE45A /* OpenSans-Regular.ttf */,
+				D96B8FA3207B1CB2004EE45A /* OpenSans-SemiBold.ttf */,
+				D96B8F9D207B1CB1004EE45A /* OpenSans-SemiBoldItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D96B8F9A207B1C0C004EE45A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D934ADAC206820A5003673C3 /* WelcomeScreen.xib */,
+				D98911272068A077008EA4C6 /* AddMedicationView.xib */,
+				D912B6CA206B0F980010B42B /* AskMedicationView.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,14 +252,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D96B8FAD207B1CB3004EE45A /* OpenSans-SemiBold.ttf in Resources */,
+				D96B8FAE207B1CB3004EE45A /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				D96B8FA6207B1CB3004EE45A /* OpenSans-Regular.ttf in Resources */,
 				D934ADAD206820A5003673C3 /* WelcomeScreen.xib in Resources */,
 				D912B6CB206B0F980010B42B /* AskMedicationView.xib in Resources */,
 				D934AD9D2067F85B003673C3 /* LaunchScreen.storyboard in Resources */,
 				D9583307206C0A1E003BCA7D /* Launch.storyboard in Resources */,
 				D934AD9A2067F85B003673C3 /* Assets.xcassets in Resources */,
 				D934AD982067F85B003673C3 /* Main.storyboard in Resources */,
+				D96B8FA5207B1CB3004EE45A /* OpenSans-Light.ttf in Resources */,
+				D96B8FA7207B1CB3004EE45A /* OpenSans-SemiBoldItalic.ttf in Resources */,
 				D934ADA52067FA19003673C3 /* Splash.storyboard in Resources */,
+				D96B8FA9207B1CB3004EE45A /* OpenSans-Bold.ttf in Resources */,
 				D98911282068A077008EA4C6 /* AddMedicationView.xib in Resources */,
+				D96B8FA8207B1CB3004EE45A /* OpenSans-ExtraBold.ttf in Resources */,
+				D96B8FAA207B1CB3004EE45A /* OpenSans-Italic.ttf in Resources */,
+				D96B8FAC207B1CB3004EE45A /* OpenSans-BoldItalic.ttf in Resources */,
+				D96B8FAB207B1CB3004EE45A /* OpenSans-LightItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
