@@ -21,6 +21,5 @@ class SplashScreenViewController: UIViewController {
         UIView.animate(withDuration: 0.5, animations: { [unowned self] in
             self.getStartedLabel.alpha = 1
         })
-        
     }
 }
