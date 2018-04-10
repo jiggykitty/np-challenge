@@ -35,7 +35,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let storyboard = UIStoryboard(name: "Splash", bundle: nil)
         let splashScreenVC = storyboard.instantiateViewController(withIdentifier: "SplashScreenVC")
         self.topController().present(splashScreenVC, animated: false, completion: nil)
-        
     }
     
     func topController(_ parent: UIViewController? = nil) -> UIViewController {

@@ -6,7 +6,7 @@
 //  Copyright © 2018 Cagri Sahan. All rights reserved.
 //
 
-class Medication {
+class Medication: Codable {
     let name: String
     let description: String?
     

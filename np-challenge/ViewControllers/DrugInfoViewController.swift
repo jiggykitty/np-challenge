@@ -60,8 +60,10 @@ class DrugInfoViewController: UIViewController {
             let decoder = JSONDecoder()
             let results = try! decoder.decode(Results.self, from: data!)
             
-            DispatchQueue.main.async {
-                self.textView.text = results.results![0].indications_and_usage?.joined(separator: "\n")
+            if let result = results.results {
+                DispatchQueue.main.async {
+                    self.textView.text = result[0].indications_and_usage?.joined(separator: "\n")
+                }
             }
         }
         task.resume()

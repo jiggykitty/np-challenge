@@ -6,7 +6,7 @@
 //  Copyright © 2018 Cagri Sahan. All rights reserved.
 //
 
-class Patient {
+class Patient: Codable {
     let name: String
     var email: String?
     var phone: String?

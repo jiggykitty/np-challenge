@@ -49,10 +49,14 @@ class ResultScreenViewController: UIViewController {
         nameField.text = "\(patient?.name ?? "Patient")'s Results"
         tableView.dataSource = self
         tableView.translatesAutoresizingMaskIntoConstraints = false
-        
-        for item in patient!.prescriptions {
-            print(item)
-            print(item.name)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "viewDataSegue" {
+            let vc = segue.destination as! DataScreenViewController
+            vc.patient = patient
+            vc.parentVC = self
+            print("yarrak")
         }
     }
 }

@@ -94,6 +94,12 @@ class ScrollingContainerViewController: UIViewController {
         let viewMinYOffset = CGPoint(x: 0.0, y: currentView!.frame.minY)
         scrollView.setContentOffset(viewMinYOffset, animated: animated)
     }
+    
+    func showSplashScreen() {
+        let storyboard = UIStoryboard(name: "Splash", bundle: nil)
+        let splashScreenVC = storyboard.instantiateViewController(withIdentifier: "SplashScreenVC")
+        self.present(splashScreenVC, animated: false, completion: nil)
+    }
 }
 
 // MARK: Extensions
