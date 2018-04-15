@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D905A036208306DE007EC40E /* UserInfoInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D905A035208306DE007EC40E /* UserInfoInputCell.swift */; };
 		D912B6C7206AB6A40010B42B /* AddMedicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D912B6C6206AB6A40010B42B /* AddMedicationViewController.swift */; };
 		D912B6C9206AE5040010B42B /* DropDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D912B6C8206AE5040010B42B /* DropDownViewController.swift */; };
 		D912B6CB206B0F980010B42B /* AskMedicationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D912B6CA206B0F980010B42B /* AskMedicationView.xib */; };
@@ -48,6 +49,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D905A035208306DE007EC40E /* UserInfoInputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoInputCell.swift; sourceTree = "<group>"; };
 		D912B6C6206AB6A40010B42B /* AddMedicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMedicationViewController.swift; sourceTree = "<group>"; };
 		D912B6C8206AE5040010B42B /* DropDownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownViewController.swift; sourceTree = "<group>"; };
 		D912B6CA206B0F980010B42B /* AskMedicationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AskMedicationView.xib; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				D934ADB0206824E4003673C3 /* UnderlinedTextField.swift */,
 				D9F0FDCD207B3528001AE515 /* MedicationTableViewCell.swift */,
 				D934ADAE20682330003673C3 /* WelcomeScreen.swift */,
+				D905A035208306DE007EC40E /* UserInfoInputCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				D96B8FB3207B2A92004EE45A /* Drug.swift in Sources */,
 				D934ADB920682D0D003673C3 /* Patient.swift in Sources */,
 				D934AD932067F85B003673C3 /* AppDelegate.swift in Sources */,
+				D905A036208306DE007EC40E /* UserInfoInputCell.swift in Sources */,
 				D96B8FB1207B2A54004EE45A /* Results.swift in Sources */,
 				D912B6D1206B369B0010B42B /* ResultScreenViewController.swift in Sources */,
 				D934ADBB20682DA8003673C3 /* Medication.swift in Sources */,

@@ -61,9 +61,12 @@ class DataScreenViewController: UIViewController {
     var patient: Patient?
     var dataDict = [String:String]()
     var parentVC: ResultScreenViewController?
+    var emailField: UITextField?
+    var phoneField: UITextField?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
         
         dataTable.layer.borderWidth = 2.0
         drugTable.layer.borderWidth = 2.0
@@ -108,13 +111,24 @@ extension DataScreenViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if tableView == dataTable {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "dataCell", for: indexPath)
-            let index = dataDict.index(dataDict.startIndex, offsetBy: indexPath.row)
-            print(index)
-            print(dataDict.keys)
-            cell.textLabel?.text = dataDict.keys[index]
-            cell.detailTextLabel?.text = dataDict.values[index]
-            return cell
+            if indexPath.row == 0 {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "dataCell", for: indexPath)
+                cell.textLabel?.text = dataDict.first?.key
+                cell.detailTextLabel?.text = dataDict.first?.value
+                return cell
+            }
+            else {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "userInfoInputCell", for: indexPath) as! UserInfoInputCell
+                let index = dataDict.index(dataDict.startIndex, offsetBy: indexPath.row)
+                cell.dataLabel.text = dataDict.keys[index]
+                if  indexPath.row == 1 {
+                    self.emailField = cell.dataInput
+                }
+                else if indexPath.row == 2 {
+                    self.phoneField = cell.dataInput
+                }
+                return cell
+            }
         }
         else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "medicationCell", for: indexPath)
