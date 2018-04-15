@@ -27,6 +27,7 @@ class DataScreenViewController: UIViewController {
     }
     @IBAction func completeProfileButtonPressed(_ sender: Any) {
         uploadData()
+        self.view.endEditing(true)
     }
     
     
@@ -79,16 +80,26 @@ class DataScreenViewController: UIViewController {
         let url = URL(string: "http://ec2-54-162-72-84.compute-1.amazonaws.com/addPatient.php")
         var request = URLRequest(url: url!)
         request.httpMethod = "POST"
-        var bodyDate = "Name=\(patient!.name)&Email=\(patient?.email ?? "")&Telephone=\(patient?.phone ?? "")"
-        request.httpBody = bodyDate.data(using: .utf8)
+        let bodyData = "Name=\(patient!.name)&Email=\(patient?.email ?? "")&Telephone=\(patient?.phone ?? "")"
+        request.httpBody = bodyData.data(using: .utf8)
         
         let session = URLSession.shared
-        let task = session.dataTask(with: request) { data, response, error in
+        let task = session.dataTask(with: request) { [unowned self] data, response, error in
             guard error == nil else { return }
             guard data != nil else { return }
             
             let patientID = String(data: data!, encoding: .utf8)
-            print(patientID)
+            
+            let drugUrl = URL(string: "http://ec2-54-162-72-84.compute-1.amazonaws.com/addDrug.php")
+            for drug in self.patient!.prescriptions {
+                var drugRequest = URLRequest(url: drugUrl!)
+                drugRequest.httpMethod = "POST"
+                let drugBodyData = "id=\(patientID!)&DrugName=\(drug.name)"
+                drugRequest.httpBody = drugBodyData.data(using: .utf8)
+                
+                let task = session.dataTask(with: drugRequest)
+                task.resume()
+            }
         }
         
         task.resume()
