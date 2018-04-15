@@ -25,6 +25,10 @@ class DataScreenViewController: UIViewController {
             }
         }
     }
+    @IBAction func completeProfileButtonPressed(_ sender: Any) {
+        uploadData()
+    }
+    
     
     @IBAction func viewResultsButtonPressed(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
@@ -64,6 +68,33 @@ class DataScreenViewController: UIViewController {
     var emailField: UITextField?
     var phoneField: UITextField?
     
+    // MARK: Functions
+    func uploadData() {
+        dataDict["Email"] = emailField?.text
+        dataDict["Telephone"] = phoneField?.text
+        
+        patient?.email = emailField?.text
+        patient?.phone = phoneField?.text
+        
+        let url = URL(string: "http://ec2-54-162-72-84.compute-1.amazonaws.com/addPatient.php")
+        var request = URLRequest(url: url!)
+        request.httpMethod = "POST"
+        var bodyDate = "Name=\(patient!.name)&Email=\(patient?.email ?? "")&Telephone=\(patient?.phone ?? "")"
+        request.httpBody = bodyDate.data(using: .utf8)
+        
+        let session = URLSession.shared
+        let task = session.dataTask(with: request) { data, response, error in
+            guard error == nil else { return }
+            guard data != nil else { return }
+            
+            let patientID = String(data: data!, encoding: .utf8)
+            print(patientID)
+        }
+        
+        task.resume()
+    }
+    
+    // MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
